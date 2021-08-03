@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* 전역설정은 여기서  */
 * {
   box-sizing: border-box;
+}
+#root {
+  display: flex;
+  justify-content: center;
 }
