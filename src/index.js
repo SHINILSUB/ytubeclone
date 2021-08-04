@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Youtube from './service/youtube';
 
+//app.jsx에 작성하면 계속 생성하지만 이곳에 생성하면 딱 한번만 호출 및 생성한다.
+const youtube = new Youtube(process.env.REACT_APP_YOUTUBE_API_KEY)
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App youtube={youtube}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
