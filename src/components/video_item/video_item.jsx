@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./video_item.module.css";
 
 const VideoItem = memo(

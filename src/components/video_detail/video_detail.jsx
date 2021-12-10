@@ -13,7 +13,7 @@ const VideoDetail = ({ video }) => (
     ></iframe>
     <h2>{video.snippet.title}</h2>
     <h3>{video.snippet.channelTitle}</h3>
-    <pre>{video.snippet.description}</pre>
+    <pre className={styles.description}>{video.snippet.description}</pre>
   </section>
 );
 
